@@ -14,6 +14,7 @@ html {
     --black-color: #000000;
     --grey-color: #757575;
     --blackgrey-color: #212121;
+    --advanteges-picture-color: #F5F4FA;
 }
 
 body {
@@ -147,12 +148,13 @@ h1, h2, h3, p {
 }
 
 .main-title-background {
-    background: #2F303A;
     padding: 200px 0px;
     text-align: center;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
 }
 
 /* Кнопка заголовка */
@@ -209,6 +211,18 @@ h1, h2, h3, p {
     letter-spacing: 0.03em;
     color: var(--grey-color);
     width: 270px;
+}
+
+.advanteges-icon {
+    margin: 25px 100px;
+}
+
+.advanteges-box-icon {
+background: #F5F4FA;
+border-radius: 4px;
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
 }
 
 img {
@@ -281,6 +295,18 @@ img {
     /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--grey-color);
+}
+
+.team-box-icon {
+    width: 206px;
+    height: 44px;
+    margin-top: 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.team-icon {
+    padding: 12px;
 }
 
 .container-team {
