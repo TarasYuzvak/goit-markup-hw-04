@@ -213,9 +213,6 @@ h1, h2, h3, p {
     width: 270px;
 }
 
-.advanteges-icon {
-    margin: 25px 100px;
-}
 
 .advanteges-box-icon {
 background: #F5F4FA;
@@ -223,6 +220,9 @@ border-radius: 4px;
 width: 270px;
 height: 120px;
 margin-bottom: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 img {
@@ -298,6 +298,8 @@ img {
 }
 
 .team-box-icon {
+    display: flex;
+    justify-content: space-between;
     width: 206px;
     height: 44px;
     margin-top: 16px;
@@ -305,13 +307,51 @@ img {
     margin-left: 32px;
 }
 
+.team-icon:hover, .team-icon:focus {
+    background: #2196F3;
+    fill: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .team-icon {
     padding: 12px;
+    fill: #AFB1B8;
+    display: inline-flex;
 }
 
 .container-team {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+/*Постійні клієнти*/
+
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.client-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.client-icon {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: inline-flex;
+    fill: #AFB1B8;
+    padding: 16px 32px;
+}
+
+.client-icon:hover, .client-icon:focus {
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    fill: #2196F3;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -361,6 +401,7 @@ footer {
 .address .item:not(:last-child) {
     margin-bottom: 9px;
 }
+
 
 /* Портфолио */
 
