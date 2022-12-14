@@ -133,6 +133,15 @@ h1, h2, h3, p {
     margin-right: 50px;
 }
 
+.contacts-header-icon {
+    fill: var(--grey-color);
+    
+}
+
+.contacts-header-icon:hover, .contacts-header-icon:focus {
+    fill: var(--hover-color-link);
+}
+
 /* Заголовок */
 
 .main-title {
@@ -402,6 +411,23 @@ footer {
     margin-bottom: 9px;
 }
 
+.footer-box {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.footer-box-icons {
+    width: 206px;
+    height: 80px;
+    padding-left: 70px;
+    margin-top: 72px;
+}
+
+.footer-box-social {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Портфолио */
 
@@ -484,4 +510,10 @@ footer {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.active {
+    background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
