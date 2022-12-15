@@ -134,12 +134,8 @@ h1, h2, h3, p {
 }
 
 .contacts-header-icon {
-    fill: var(--grey-color);
+    fill: currentColor;
     
-}
-
-.contacts-header-icon:hover, .contacts-header-icon:focus {
-    fill: var(--hover-color-link);
 }
 
 /* Заголовок */
@@ -162,7 +158,7 @@ h1, h2, h3, p {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../img/background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
     background-repeat: no-repeat;
 }
 
@@ -284,6 +280,9 @@ img {
     border-right: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
     border-left: 2px solid #eeeeee;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -324,9 +323,13 @@ img {
 }
 
 .team-icon {
-    padding: 12px;
     fill: #AFB1B8;
     display: inline-flex;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-team {
@@ -353,7 +356,11 @@ img {
     border-radius: 4px;
     display: inline-flex;
     fill: #AFB1B8;
-    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-icon:hover, .client-icon:focus {
@@ -414,19 +421,45 @@ footer {
 .footer-box {
     display: flex;
     justify-content: flex-start;
-    
+    align-items: center;
 }
 
 .footer-box-icons {
     width: 206px;
     height: 80px;
-    padding-left: 70px;
-    margin-top: 72px;
+    margin-left: 70px;
 }
 
 .footer-box-social {
     display: flex;
     justify-content: space-between;
+}
+
+.footer-icons {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons:hover, .footer-icons:focus {
+    fill: var(--white-color);
+    background-color: var(--hover-color-link);
+}
+
+.footer-social-title {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    display: inline-block;
 }
 
 /* Портфолио */
@@ -458,6 +491,8 @@ footer {
 .button-portfolio .button:hover, .button-portfolio .button:focus {
     background-color: var(--hover-color-link);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .projects {
@@ -488,6 +523,12 @@ footer {
     margin-bottom: 30px;
 }
 
+.projects-item:hover {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
 .projects-item:nth-last-child(-n +3) {
     margin-bottom: 0;
 }
@@ -512,8 +553,4 @@ footer {
   border-left: 1px solid #eeeeee;
 }
 
-.active {
-    background: #FFFFFF;
-border: 1px solid #EEEEEE;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
